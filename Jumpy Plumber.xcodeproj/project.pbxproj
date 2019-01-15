@@ -1,0 +1,702 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		591E66C61C99AD3F00762E30 /* joystix monospace.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 591E66C51C99AD3F00762E30 /* joystix monospace.ttf */; };
+		595BDBCB1C98A16B0045A72E /* coin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBC41C98A16B0045A72E /* coin.wav */; };
+		595BDBCD1C98A16B0045A72E /* falling.wav in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBC61C98A16B0045A72E /* falling.wav */; };
+		595BDBCE1C98A16B0045A72E /* flapping.wav in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBC71C98A16B0045A72E /* flapping.wav */; };
+		595BDBCF1C98A16B0045A72E /* hitGround.wav in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBC81C98A16B0045A72E /* hitGround.wav */; };
+		595BDBD01C98A16B0045A72E /* pop.wav in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBC91C98A16B0045A72E /* pop.wav */; };
+		595BDBD11C98A16B0045A72E /* whack.wav in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBCA1C98A16B0045A72E /* whack.wav */; };
+		595BDBD51C98A1700045A72E /* backgrounds.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBD31C98A1700045A72E /* backgrounds.atlas */; };
+		595BDBD61C98A1700045A72E /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 595BDBD41C98A1700045A72E /* sprites.atlas */; };
+		595BDBE41C98A1AF0045A72E /* CGFloat+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBD81C98A1AF0045A72E /* CGFloat+Extensions.swift */; };
+		595BDBE51C98A1AF0045A72E /* CGPoint+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBD91C98A1AF0045A72E /* CGPoint+Extensions.swift */; };
+		595BDBE61C98A1AF0045A72E /* CGVector+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBDA1C98A1AF0045A72E /* CGVector+Extensions.swift */; };
+		595BDBE71C98A1AF0045A72E /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBDB1C98A1AF0045A72E /* Int+Extensions.swift */; };
+		595BDBE81C98A1AF0045A72E /* SKAction+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBDC1C98A1AF0045A72E /* SKAction+Extensions.swift */; };
+		595BDBE91C98A1AF0045A72E /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBDD1C98A1AF0045A72E /* SKAction+SpecialEffects.swift */; };
+		595BDBEA1C98A1AF0045A72E /* SKColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBDE1C98A1AF0045A72E /* SKColor+Extensions.swift */; };
+		595BDBEB1C98A1AF0045A72E /* SKNode+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBDF1C98A1AF0045A72E /* SKNode+Extensions.swift */; };
+		595BDBEC1C98A1AF0045A72E /* SKTAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBE01C98A1AF0045A72E /* SKTAudio.swift */; };
+		595BDBED1C98A1AF0045A72E /* SKTEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBE11C98A1AF0045A72E /* SKTEffects.swift */; };
+		595BDBEE1C98A1AF0045A72E /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBE21C98A1AF0045A72E /* SKTTimingFunctions.swift */; };
+		595BDBEF1C98A1AF0045A72E /* Vector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 595BDBE31C98A1AF0045A72E /* Vector3.swift */; };
+		59828EC51D2F289600FCAD1C /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 59828EB71D2F289600FCAD1C /* Contents.json */; };
+		59828EC61D2F289600FCAD1C /* Icon-App-29x29@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EB81D2F289600FCAD1C /* Icon-App-29x29@1x.png */; };
+		59828EC71D2F289600FCAD1C /* Icon-App-29x29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EB91D2F289600FCAD1C /* Icon-App-29x29@2x.png */; };
+		59828EC81D2F289600FCAD1C /* Icon-App-29x29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EBA1D2F289600FCAD1C /* Icon-App-29x29@3x.png */; };
+		59828EC91D2F289600FCAD1C /* Icon-App-40x40@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EBB1D2F289600FCAD1C /* Icon-App-40x40@1x.png */; };
+		59828ECA1D2F289600FCAD1C /* Icon-App-40x40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EBC1D2F289600FCAD1C /* Icon-App-40x40@2x.png */; };
+		59828ECB1D2F289600FCAD1C /* Icon-App-40x40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EBD1D2F289600FCAD1C /* Icon-App-40x40@3x.png */; };
+		59828ECC1D2F289600FCAD1C /* Icon-App-60x60@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EBE1D2F289600FCAD1C /* Icon-App-60x60@1x.png */; };
+		59828ECD1D2F289600FCAD1C /* Icon-App-60x60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EBF1D2F289600FCAD1C /* Icon-App-60x60@2x.png */; };
+		59828ECE1D2F289600FCAD1C /* Icon-App-60x60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EC01D2F289600FCAD1C /* Icon-App-60x60@3x.png */; };
+		59828ECF1D2F289600FCAD1C /* Icon-App-76x76@1x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EC11D2F289600FCAD1C /* Icon-App-76x76@1x.png */; };
+		59828ED01D2F289600FCAD1C /* Icon-App-76x76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EC21D2F289600FCAD1C /* Icon-App-76x76@2x.png */; };
+		59828ED11D2F289600FCAD1C /* Icon-App-76x76@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EC31D2F289600FCAD1C /* Icon-App-76x76@3x.png */; };
+		59828ED21D2F289600FCAD1C /* Icon-App-83.5x83.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59828EC41D2F289600FCAD1C /* Icon-App-83.5x83.5@2x.png */; };
+		59D763851C989DF100D5A6F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D763841C989DF100D5A6F1 /* AppDelegate.swift */; };
+		59D763871C989DF100D5A6F1 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 59D763861C989DF100D5A6F1 /* GameScene.sks */; };
+		59D763891C989DF100D5A6F1 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D763881C989DF100D5A6F1 /* GameScene.swift */; };
+		59D7638B1C989DF100D5A6F1 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7638A1C989DF100D5A6F1 /* GameViewController.swift */; };
+		59D7638E1C989DF100D5A6F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D7638C1C989DF100D5A6F1 /* Main.storyboard */; };
+		59D763901C989DF100D5A6F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59D7638F1C989DF100D5A6F1 /* Assets.xcassets */; };
+		59D763931C989DF100D5A6F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59D763911C989DF100D5A6F1 /* LaunchScreen.storyboard */; };
+		59D7639E1C989DF100D5A6F1 /* Jumpy_PlumberTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D7639D1C989DF100D5A6F1 /* Jumpy_PlumberTests.swift */; };
+		59D763A91C989DF100D5A6F1 /* Jumpy_PlumberUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59D763A81C989DF100D5A6F1 /* Jumpy_PlumberUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59D7639A1C989DF100D5A6F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D763791C989DF100D5A6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D763801C989DF100D5A6F1;
+			remoteInfo = "Jumpy Plumber";
+		};
+		59D763A51C989DF100D5A6F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59D763791C989DF100D5A6F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59D763801C989DF100D5A6F1;
+			remoteInfo = "Jumpy Plumber";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		591E66C51C99AD3F00762E30 /* joystix monospace.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "joystix monospace.ttf"; sourceTree = "<group>"; };
+		595BDBC41C98A16B0045A72E /* coin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coin.wav; sourceTree = "<group>"; };
+		595BDBC61C98A16B0045A72E /* falling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = falling.wav; sourceTree = "<group>"; };
+		595BDBC71C98A16B0045A72E /* flapping.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = flapping.wav; sourceTree = "<group>"; };
+		595BDBC81C98A16B0045A72E /* hitGround.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitGround.wav; sourceTree = "<group>"; };
+		595BDBC91C98A16B0045A72E /* pop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pop.wav; sourceTree = "<group>"; };
+		595BDBCA1C98A16B0045A72E /* whack.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = whack.wav; sourceTree = "<group>"; };
+		595BDBD31C98A1700045A72E /* backgrounds.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = backgrounds.atlas; sourceTree = "<group>"; };
+		595BDBD41C98A1700045A72E /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		595BDBD81C98A1AF0045A72E /* CGFloat+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBD91C98A1AF0045A72E /* CGPoint+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBDA1C98A1AF0045A72E /* CGVector+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGVector+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBDB1C98A1AF0045A72E /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBDC1C98A1AF0045A72E /* SKAction+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBDD1C98A1AF0045A72E /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
+		595BDBDE1C98A1AF0045A72E /* SKColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKColor+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBDF1C98A1AF0045A72E /* SKNode+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKNode+Extensions.swift"; sourceTree = "<group>"; };
+		595BDBE01C98A1AF0045A72E /* SKTAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTAudio.swift; sourceTree = "<group>"; };
+		595BDBE11C98A1AF0045A72E /* SKTEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTEffects.swift; sourceTree = "<group>"; };
+		595BDBE21C98A1AF0045A72E /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
+		595BDBE31C98A1AF0045A72E /* Vector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vector3.swift; sourceTree = "<group>"; };
+		59828EB71D2F289600FCAD1C /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
+		59828EB81D2F289600FCAD1C /* Icon-App-29x29@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@1x.png"; sourceTree = "<group>"; };
+		59828EB91D2F289600FCAD1C /* Icon-App-29x29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@2x.png"; sourceTree = "<group>"; };
+		59828EBA1D2F289600FCAD1C /* Icon-App-29x29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-29x29@3x.png"; sourceTree = "<group>"; };
+		59828EBB1D2F289600FCAD1C /* Icon-App-40x40@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@1x.png"; sourceTree = "<group>"; };
+		59828EBC1D2F289600FCAD1C /* Icon-App-40x40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@2x.png"; sourceTree = "<group>"; };
+		59828EBD1D2F289600FCAD1C /* Icon-App-40x40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-40x40@3x.png"; sourceTree = "<group>"; };
+		59828EBE1D2F289600FCAD1C /* Icon-App-60x60@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@1x.png"; sourceTree = "<group>"; };
+		59828EBF1D2F289600FCAD1C /* Icon-App-60x60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@2x.png"; sourceTree = "<group>"; };
+		59828EC01D2F289600FCAD1C /* Icon-App-60x60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-60x60@3x.png"; sourceTree = "<group>"; };
+		59828EC11D2F289600FCAD1C /* Icon-App-76x76@1x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@1x.png"; sourceTree = "<group>"; };
+		59828EC21D2F289600FCAD1C /* Icon-App-76x76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@2x.png"; sourceTree = "<group>"; };
+		59828EC31D2F289600FCAD1C /* Icon-App-76x76@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-76x76@3x.png"; sourceTree = "<group>"; };
+		59828EC41D2F289600FCAD1C /* Icon-App-83.5x83.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-App-83.5x83.5@2x.png"; sourceTree = "<group>"; };
+		59D763811C989DF100D5A6F1 /* Donald Dragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Donald Dragon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D763841C989DF100D5A6F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		59D763861C989DF100D5A6F1 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		59D763881C989DF100D5A6F1 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		59D7638A1C989DF100D5A6F1 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		59D7638D1C989DF100D5A6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		59D7638F1C989DF100D5A6F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		59D763921C989DF100D5A6F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		59D763941C989DF100D5A6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D763991C989DF100D5A6F1 /* Jumpy PlumberTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jumpy PlumberTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D7639D1C989DF100D5A6F1 /* Jumpy_PlumberTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumpy_PlumberTests.swift; sourceTree = "<group>"; };
+		59D7639F1C989DF100D5A6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		59D763A41C989DF100D5A6F1 /* Jumpy PlumberUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jumpy PlumberUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		59D763A81C989DF100D5A6F1 /* Jumpy_PlumberUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jumpy_PlumberUITests.swift; sourceTree = "<group>"; };
+		59D763AA1C989DF100D5A6F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59D7637E1C989DF100D5A6F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D763961C989DF100D5A6F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D763A11C989DF100D5A6F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		595BDBC31C98A16B0045A72E /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				595BDBC41C98A16B0045A72E /* coin.wav */,
+				595BDBC61C98A16B0045A72E /* falling.wav */,
+				595BDBC71C98A16B0045A72E /* flapping.wav */,
+				595BDBC81C98A16B0045A72E /* hitGround.wav */,
+				595BDBC91C98A16B0045A72E /* pop.wav */,
+				595BDBCA1C98A16B0045A72E /* whack.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		595BDBD21C98A1700045A72E /* Sprites */ = {
+			isa = PBXGroup;
+			children = (
+				595BDBD31C98A1700045A72E /* backgrounds.atlas */,
+				595BDBD41C98A1700045A72E /* sprites.atlas */,
+			);
+			path = Sprites;
+			sourceTree = "<group>";
+		};
+		595BDBD71C98A1AF0045A72E /* SKUtils */ = {
+			isa = PBXGroup;
+			children = (
+				595BDBD81C98A1AF0045A72E /* CGFloat+Extensions.swift */,
+				595BDBD91C98A1AF0045A72E /* CGPoint+Extensions.swift */,
+				595BDBDA1C98A1AF0045A72E /* CGVector+Extensions.swift */,
+				595BDBDB1C98A1AF0045A72E /* Int+Extensions.swift */,
+				595BDBDC1C98A1AF0045A72E /* SKAction+Extensions.swift */,
+				595BDBDD1C98A1AF0045A72E /* SKAction+SpecialEffects.swift */,
+				595BDBDE1C98A1AF0045A72E /* SKColor+Extensions.swift */,
+				595BDBDF1C98A1AF0045A72E /* SKNode+Extensions.swift */,
+				595BDBE01C98A1AF0045A72E /* SKTAudio.swift */,
+				595BDBE11C98A1AF0045A72E /* SKTEffects.swift */,
+				595BDBE21C98A1AF0045A72E /* SKTTimingFunctions.swift */,
+				595BDBE31C98A1AF0045A72E /* Vector3.swift */,
+			);
+			path = SKUtils;
+			sourceTree = "<group>";
+		};
+		59828EB61D2F289600FCAD1C /* AppIcon.appiconset */ = {
+			isa = PBXGroup;
+			children = (
+				59828EB71D2F289600FCAD1C /* Contents.json */,
+				59828EB81D2F289600FCAD1C /* Icon-App-29x29@1x.png */,
+				59828EB91D2F289600FCAD1C /* Icon-App-29x29@2x.png */,
+				59828EBA1D2F289600FCAD1C /* Icon-App-29x29@3x.png */,
+				59828EBB1D2F289600FCAD1C /* Icon-App-40x40@1x.png */,
+				59828EBC1D2F289600FCAD1C /* Icon-App-40x40@2x.png */,
+				59828EBD1D2F289600FCAD1C /* Icon-App-40x40@3x.png */,
+				59828EBE1D2F289600FCAD1C /* Icon-App-60x60@1x.png */,
+				59828EBF1D2F289600FCAD1C /* Icon-App-60x60@2x.png */,
+				59828EC01D2F289600FCAD1C /* Icon-App-60x60@3x.png */,
+				59828EC11D2F289600FCAD1C /* Icon-App-76x76@1x.png */,
+				59828EC21D2F289600FCAD1C /* Icon-App-76x76@2x.png */,
+				59828EC31D2F289600FCAD1C /* Icon-App-76x76@3x.png */,
+				59828EC41D2F289600FCAD1C /* Icon-App-83.5x83.5@2x.png */,
+			);
+			path = AppIcon.appiconset;
+			sourceTree = "<group>";
+		};
+		59D763781C989DF100D5A6F1 = {
+			isa = PBXGroup;
+			children = (
+				59D763831C989DF100D5A6F1 /* Jumpy Plumber */,
+				59D7639C1C989DF100D5A6F1 /* Jumpy PlumberTests */,
+				59D763A71C989DF100D5A6F1 /* Jumpy PlumberUITests */,
+				59D763821C989DF100D5A6F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59D763821C989DF100D5A6F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59D763811C989DF100D5A6F1 /* Donald Dragon.app */,
+				59D763991C989DF100D5A6F1 /* Jumpy PlumberTests.xctest */,
+				59D763A41C989DF100D5A6F1 /* Jumpy PlumberUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59D763831C989DF100D5A6F1 /* Jumpy Plumber */ = {
+			isa = PBXGroup;
+			children = (
+				59828EB61D2F289600FCAD1C /* AppIcon.appiconset */,
+				595BDBD21C98A1700045A72E /* Sprites */,
+				59D763841C989DF100D5A6F1 /* AppDelegate.swift */,
+				59D763861C989DF100D5A6F1 /* GameScene.sks */,
+				59D763881C989DF100D5A6F1 /* GameScene.swift */,
+				59D7638A1C989DF100D5A6F1 /* GameViewController.swift */,
+				59D7638C1C989DF100D5A6F1 /* Main.storyboard */,
+				59D7638F1C989DF100D5A6F1 /* Assets.xcassets */,
+				59D763911C989DF100D5A6F1 /* LaunchScreen.storyboard */,
+				59D763941C989DF100D5A6F1 /* Info.plist */,
+				591E66C51C99AD3F00762E30 /* joystix monospace.ttf */,
+				595BDBD71C98A1AF0045A72E /* SKUtils */,
+				595BDBC31C98A16B0045A72E /* Sounds */,
+			);
+			path = "Jumpy Plumber";
+			sourceTree = "<group>";
+		};
+		59D7639C1C989DF100D5A6F1 /* Jumpy PlumberTests */ = {
+			isa = PBXGroup;
+			children = (
+				59D7639D1C989DF100D5A6F1 /* Jumpy_PlumberTests.swift */,
+				59D7639F1C989DF100D5A6F1 /* Info.plist */,
+			);
+			path = "Jumpy PlumberTests";
+			sourceTree = "<group>";
+		};
+		59D763A71C989DF100D5A6F1 /* Jumpy PlumberUITests */ = {
+			isa = PBXGroup;
+			children = (
+				59D763A81C989DF100D5A6F1 /* Jumpy_PlumberUITests.swift */,
+				59D763AA1C989DF100D5A6F1 /* Info.plist */,
+			);
+			path = "Jumpy PlumberUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59D763801C989DF100D5A6F1 /* Jumpy Plumber */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D763AD1C989DF100D5A6F1 /* Build configuration list for PBXNativeTarget "Jumpy Plumber" */;
+			buildPhases = (
+				59D7637D1C989DF100D5A6F1 /* Sources */,
+				59D7637E1C989DF100D5A6F1 /* Frameworks */,
+				59D7637F1C989DF100D5A6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Jumpy Plumber";
+			productName = "Jumpy Plumber";
+			productReference = 59D763811C989DF100D5A6F1 /* Donald Dragon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59D763981C989DF100D5A6F1 /* Jumpy PlumberTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D763B01C989DF100D5A6F1 /* Build configuration list for PBXNativeTarget "Jumpy PlumberTests" */;
+			buildPhases = (
+				59D763951C989DF100D5A6F1 /* Sources */,
+				59D763961C989DF100D5A6F1 /* Frameworks */,
+				59D763971C989DF100D5A6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D7639B1C989DF100D5A6F1 /* PBXTargetDependency */,
+			);
+			name = "Jumpy PlumberTests";
+			productName = "Jumpy PlumberTests";
+			productReference = 59D763991C989DF100D5A6F1 /* Jumpy PlumberTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		59D763A31C989DF100D5A6F1 /* Jumpy PlumberUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59D763B31C989DF100D5A6F1 /* Build configuration list for PBXNativeTarget "Jumpy PlumberUITests" */;
+			buildPhases = (
+				59D763A01C989DF100D5A6F1 /* Sources */,
+				59D763A11C989DF100D5A6F1 /* Frameworks */,
+				59D763A21C989DF100D5A6F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59D763A61C989DF100D5A6F1 /* PBXTargetDependency */,
+			);
+			name = "Jumpy PlumberUITests";
+			productName = "Jumpy PlumberUITests";
+			productReference = 59D763A41C989DF100D5A6F1 /* Jumpy PlumberUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59D763791C989DF100D5A6F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Michael Gallegos";
+				TargetAttributes = {
+					59D763801C989DF100D5A6F1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 4SK57993L3;
+					};
+					59D763981C989DF100D5A6F1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = XC9JW7XPKK;
+						TestTargetID = 59D763801C989DF100D5A6F1;
+					};
+					59D763A31C989DF100D5A6F1 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = XC9JW7XPKK;
+						TestTargetID = 59D763801C989DF100D5A6F1;
+					};
+				};
+			};
+			buildConfigurationList = 59D7637C1C989DF100D5A6F1 /* Build configuration list for PBXProject "Jumpy Plumber" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59D763781C989DF100D5A6F1;
+			productRefGroup = 59D763821C989DF100D5A6F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59D763801C989DF100D5A6F1 /* Jumpy Plumber */,
+				59D763981C989DF100D5A6F1 /* Jumpy PlumberTests */,
+				59D763A31C989DF100D5A6F1 /* Jumpy PlumberUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59D7637F1C989DF100D5A6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595BDBCF1C98A16B0045A72E /* hitGround.wav in Resources */,
+				595BDBD01C98A16B0045A72E /* pop.wav in Resources */,
+				595BDBCE1C98A16B0045A72E /* flapping.wav in Resources */,
+				591E66C61C99AD3F00762E30 /* joystix monospace.ttf in Resources */,
+				59828EC71D2F289600FCAD1C /* Icon-App-29x29@2x.png in Resources */,
+				595BDBD61C98A1700045A72E /* sprites.atlas in Resources */,
+				59828ECD1D2F289600FCAD1C /* Icon-App-60x60@2x.png in Resources */,
+				59828EC61D2F289600FCAD1C /* Icon-App-29x29@1x.png in Resources */,
+				595BDBCD1C98A16B0045A72E /* falling.wav in Resources */,
+				595BDBCB1C98A16B0045A72E /* coin.wav in Resources */,
+				59828ED21D2F289600FCAD1C /* Icon-App-83.5x83.5@2x.png in Resources */,
+				59828ECC1D2F289600FCAD1C /* Icon-App-60x60@1x.png in Resources */,
+				595BDBD11C98A16B0045A72E /* whack.wav in Resources */,
+				59828ED01D2F289600FCAD1C /* Icon-App-76x76@2x.png in Resources */,
+				59D763871C989DF100D5A6F1 /* GameScene.sks in Resources */,
+				59828EC81D2F289600FCAD1C /* Icon-App-29x29@3x.png in Resources */,
+				59828ED11D2F289600FCAD1C /* Icon-App-76x76@3x.png in Resources */,
+				59D763931C989DF100D5A6F1 /* LaunchScreen.storyboard in Resources */,
+				59D763901C989DF100D5A6F1 /* Assets.xcassets in Resources */,
+				59D7638E1C989DF100D5A6F1 /* Main.storyboard in Resources */,
+				59828ECB1D2F289600FCAD1C /* Icon-App-40x40@3x.png in Resources */,
+				59828ECA1D2F289600FCAD1C /* Icon-App-40x40@2x.png in Resources */,
+				59828EC91D2F289600FCAD1C /* Icon-App-40x40@1x.png in Resources */,
+				595BDBD51C98A1700045A72E /* backgrounds.atlas in Resources */,
+				59828ECE1D2F289600FCAD1C /* Icon-App-60x60@3x.png in Resources */,
+				59828EC51D2F289600FCAD1C /* Contents.json in Resources */,
+				59828ECF1D2F289600FCAD1C /* Icon-App-76x76@1x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D763971C989DF100D5A6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D763A21C989DF100D5A6F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59D7637D1C989DF100D5A6F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D763891C989DF100D5A6F1 /* GameScene.swift in Sources */,
+				595BDBE51C98A1AF0045A72E /* CGPoint+Extensions.swift in Sources */,
+				595BDBEE1C98A1AF0045A72E /* SKTTimingFunctions.swift in Sources */,
+				595BDBED1C98A1AF0045A72E /* SKTEffects.swift in Sources */,
+				595BDBE91C98A1AF0045A72E /* SKAction+SpecialEffects.swift in Sources */,
+				595BDBE61C98A1AF0045A72E /* CGVector+Extensions.swift in Sources */,
+				595BDBE81C98A1AF0045A72E /* SKAction+Extensions.swift in Sources */,
+				595BDBEA1C98A1AF0045A72E /* SKColor+Extensions.swift in Sources */,
+				59D7638B1C989DF100D5A6F1 /* GameViewController.swift in Sources */,
+				595BDBE71C98A1AF0045A72E /* Int+Extensions.swift in Sources */,
+				595BDBEB1C98A1AF0045A72E /* SKNode+Extensions.swift in Sources */,
+				595BDBEC1C98A1AF0045A72E /* SKTAudio.swift in Sources */,
+				595BDBE41C98A1AF0045A72E /* CGFloat+Extensions.swift in Sources */,
+				595BDBEF1C98A1AF0045A72E /* Vector3.swift in Sources */,
+				59D763851C989DF100D5A6F1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D763951C989DF100D5A6F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D7639E1C989DF100D5A6F1 /* Jumpy_PlumberTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59D763A01C989DF100D5A6F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59D763A91C989DF100D5A6F1 /* Jumpy_PlumberUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59D7639B1C989DF100D5A6F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D763801C989DF100D5A6F1 /* Jumpy Plumber */;
+			targetProxy = 59D7639A1C989DF100D5A6F1 /* PBXContainerItemProxy */;
+		};
+		59D763A61C989DF100D5A6F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59D763801C989DF100D5A6F1 /* Jumpy Plumber */;
+			targetProxy = 59D763A51C989DF100D5A6F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59D7638C1C989DF100D5A6F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D7638D1C989DF100D5A6F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		59D763911C989DF100D5A6F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59D763921C989DF100D5A6F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59D763AB1C989DF100D5A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		59D763AC1C989DF100D5A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59D763AE1C989DF100D5A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Jumpy Plumber/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = michaelgallegos.DonaldtheDragon;
+				PRODUCT_NAME = "Donald Dragon";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		59D763AF1C989DF100D5A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Jumpy Plumber/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = michaelgallegos.DonaldtheDragon;
+				PRODUCT_NAME = "Donald Dragon";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		59D763B11C989DF100D5A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Jumpy PlumberTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "michaelgallegos.Jumpy-PlumberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jumpy Plumber.app/Jumpy Plumber";
+			};
+			name = Debug;
+		};
+		59D763B21C989DF100D5A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Jumpy PlumberTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "michaelgallegos.Jumpy-PlumberTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Jumpy Plumber.app/Jumpy Plumber";
+			};
+			name = Release;
+		};
+		59D763B41C989DF100D5A6F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = "Jumpy PlumberUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "michaelgallegos.Jumpy-PlumberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jumpy Plumber";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		59D763B51C989DF100D5A6F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Jumpy PlumberUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "michaelgallegos.Jumpy-PlumberUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Jumpy Plumber";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59D7637C1C989DF100D5A6F1 /* Build configuration list for PBXProject "Jumpy Plumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D763AB1C989DF100D5A6F1 /* Debug */,
+				59D763AC1C989DF100D5A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D763AD1C989DF100D5A6F1 /* Build configuration list for PBXNativeTarget "Jumpy Plumber" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D763AE1C989DF100D5A6F1 /* Debug */,
+				59D763AF1C989DF100D5A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D763B01C989DF100D5A6F1 /* Build configuration list for PBXNativeTarget "Jumpy PlumberTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D763B11C989DF100D5A6F1 /* Debug */,
+				59D763B21C989DF100D5A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59D763B31C989DF100D5A6F1 /* Build configuration list for PBXNativeTarget "Jumpy PlumberUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59D763B41C989DF100D5A6F1 /* Debug */,
+				59D763B51C989DF100D5A6F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59D763791C989DF100D5A6F1 /* Project object */;
+}
